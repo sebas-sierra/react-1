@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.main {
+    min-height: 80vh;
+    margin: 20px;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    align-items: center;
+}
