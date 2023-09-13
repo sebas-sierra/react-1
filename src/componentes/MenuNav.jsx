@@ -29,8 +29,8 @@ const MenuNav = ({isInHeader}) => {
 
           {isInHeader 
           &&<Nav.Link href='/cart'>
-            <CartWidget></CartWidget>Cart            
-             </Nav.Link>
+              <CartWidget></CartWidget>
+              </Nav.Link>
            }
 
           
