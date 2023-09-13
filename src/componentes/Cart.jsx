@@ -12,7 +12,7 @@ const Cart = () => {
           <div>
             <h3>{prod.title}</h3>
             <h3>{prod.cantidad}</h3>
-            <button onClick={ () => deleteOne(prod.id) }>Eliminar*</button>
+            <button onClick={ () => deleteOne(prod.id) }>Eliminar/Borrar</button>
           </div>
         </div>
       ))}

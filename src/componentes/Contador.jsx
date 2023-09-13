@@ -37,7 +37,7 @@ const Contador = ({stock, onAdd}) => {
                     <Button disable={cantidad === stock} onClick={sumar} variant="outline-secondary">+</Button>
                     <Button onClick={reset} variant="outline-secondary">Reset</Button>
                     <Button onClick={restar} variant="outline-secondary">-</Button>
-                    <Button onClick={() => { onAdd(cantidad) }} variant="outline-secondary">Agregar al carrito</Button>
+                    <Button onClick={() => { onAdd(cantidad) }} variant="outline-secondary">Agregar a mi carrito</Button>
                     <Form.Control
                         placeholder={cantidad}
                         aria-label="Recipient's username with two button addons"
