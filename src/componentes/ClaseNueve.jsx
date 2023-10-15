@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Card from 'react-bootstrap/Card';
-import FormA from './FormA';
-import FormB from './FormB';
+// import FormA from './FormA';
+
 const ClaseNueve = () => {
   return (
     <div>
@@ -30,8 +30,8 @@ const ClaseNueve = () => {
               </ul> 
           
             
-            <FormA/>
-            <FormB/>
+            {/* <FormA/> */}
+            {/* <FormB/> */}
           </Card.Text>
         </Card.Body>
       </Card>
