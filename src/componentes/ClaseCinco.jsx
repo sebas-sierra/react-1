@@ -31,11 +31,11 @@ const ClaseCinco = ({stock, onAdd}) => {
             <Card.Header>CLASE 5 - Componentes II - Estados y Ciclos de vida</Card.Header>
             <Card.Body>
                 <Card.Text>
-                    - Todos los eventos van con 'camelCase'<br />
-                    - Cuando tengo que pasar parametros dentro de un elemento HTML en un evento onClick, si o si es necesario poner un callBack a la funcion para que no se ejecute automaticamente. Si no se necesita pasar parametros a la funcion, entonces no hay que usar callBack.<br />
-                    - Los estados van a permitirme persistir informacion dentro de un componente mientras este visible en pantalla o hasta que actualice mi navegador. Cada componente posee como una especie de memoria interna, distinta al localStorage o una base de datos.<br />
-                    - Cada vez que haya un cambio de estado, un cambio de prop o un evento que dispare un cambio de estado o de prop mi componenete se volvera a renderizar.<br />
-                    - Para modificar un elemento de mi componente con una interaccion, debemos asignar un estado al elemento para que refleje la modificacion para esto usamos el hook useState(). Dicha modificacion se hace usando la funcion seteadora 'setState' que hace de puente entre nuestra funcion y el estado de mi elemento.<br />
+                    <p> Todos los eventos van con 'camelCase'</p>
+                    <p> Cuando tengo que pasar parametros dentro de un elemento HTML en un evento onClick, si o si es necesario poner un callBack a la funcion para que no se ejecute automaticamente. Si no se necesita pasar parametros a la funcion, entonces no hay que usar callBack.</p>
+                    <p> Los estados van a permitirme persistir informacion dentro de un componente mientras este visible en pantalla o hasta que actualice mi navegador. Cada componente posee como una especie de memoria interna, distinta al localStorage o una base de datos.</p>
+                    <p> Cada vez que haya un cambio de estado, un cambio de prop o un evento que dispare un cambio de estado o de prop mi componenete se volvera a renderizar.</p>
+                    <p> Para modificar un elemento de mi componente con una interaccion, debemos asignar un estado al elemento para que refleje la modificacion para esto usamos el hook useState(). Dicha modificacion se hace usando la funcion seteadora 'setState' que hace de puente entre nuestra funcion y el estado de mi elemento.</p>
                 </Card.Text>
 
                 <Card.Title>- Hook useState | Ejemplo Contador - </Card.Title>
@@ -51,14 +51,14 @@ const ClaseCinco = ({stock, onAdd}) => {
                 </InputGroup>
                 
                 <Card.Text>
-                    - Los componentes y sus ciclos de vida, esto abarca el proceso a traves del cual un componente se monta (se renderiza en pantalla), se actualiza (se vuelve a renderizar debido a un cambio de PROP o de estado) y se desmonta.
+                    <p> Los componentes y sus ciclos de vida, esto abarca el proceso a traves del cual un componente se monta (se renderiza en pantalla), se actualiza (se vuelve a renderizar debido a un cambio de PROP o de estado) y se desmonta.</p>
                 </Card.Text>
                 
                 <EjemploState/>
                 <Card.Text>
-                    El hook useEffect sirve para ejecutar codigo despues del renderizado de mi componente, su funcionamiento es similar al metodo 'asincronia' de JS, pero no lo es. Me sirve para escribir codigo que se tienen que ejecutar luego del renderizado de mi componente.<br/><br/>
-                    El Hook useEffect() que recibe dos parametros: - uno es una funcion de callBack - y el otro (que puede ir o no) es un array de dependencias, que puede estar vacio o no. Si el array NO EXISTE, la funcion callBack se ejecuta cada vez que se renderiza el componente. Si el Array esta vacio se ejecutara solo UNA vez. y si el array de dependencias incluye la dependencia, entonces se ejecutara cada vez que detecte un cambio de estado en ella.<br/><br/>
-                    Todo el codigo dentro del hook useState ejecuta despues del render de mi componente, se comporta como algo similar a las llamadas asincronicas<br/>
+                    <p> El hook useEffect sirve para ejecutar codigo despues del renderizado de mi componente, su funcionamiento es similar al metodo 'asincronia' de JS, pero no lo es. Me sirve para escribir codigo que se tienen que ejecutar luego del renderizado de mi componente.</p>
+                    <p> El Hook useEffect() que recibe dos parametros: - uno es una funcion de callBack - y el otro (que puede ir o no) es un array de dependencias, que puede estar vacio o no. Si el array NO EXISTE, la funcion callBack se ejecuta cada vez que se renderiza el componente. Si el Array esta vacio se ejecutara solo UNA vez. y si el array de dependencias incluye la dependencia, entonces se ejecutara cada vez que detecte un cambio de estado en ella.</p>
+                    <p> Todo el codigo dentro del hook useEffect se ejecuta despues del render de mi componente, se comporta como algo similar a las llamadas asincronicas</p>
                 </Card.Text>
             </Card.Body>
         </Card>

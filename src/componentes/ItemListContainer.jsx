@@ -5,13 +5,16 @@ import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
+  //estado contenedor de la data que nos devuelve la promesa, se inicializa con un array vacio
   const [items, setItems] = useState([]);
+  //estado para mostrar el loading
   const [loading, setLoading] = useState(true);
 
   // const valor = useParams();
   // console.log  (valor.categoryName)
   
   const { categoryName } = useParams();
+
   useEffect(() => {
     const getProducts = () => {
       return new Promise((res, rej) => {
